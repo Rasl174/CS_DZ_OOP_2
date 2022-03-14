@@ -14,7 +14,7 @@ namespace CS_DZ_OOP_2
 
             Player player = new Player(5, 10);
 
-            spawn.SpawnPlayer(player.X, player.Y);
+            spawn.SpawnPlayer(player.PositionX, player.PositionY);
         }
     }
 
@@ -31,12 +31,12 @@ namespace CS_DZ_OOP_2
     {
         public Player(int x, int y)
         {
-            X = x;
-            Y = y;
+            PositionX = x;
+            PositionY = y;
         }
 
-        public int X { get; private set; }
+        public int PositionX { get; private set; }
 
-        public int Y { get; private set; }
+        public int PositionY { get; private set; }
     }
 }
